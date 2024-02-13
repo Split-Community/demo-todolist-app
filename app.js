@@ -2,8 +2,8 @@ import { SplitSuite } from "@splitsoftware/browser-suite";
 
 const authorizationKey = "SDK_KEY";
 const anonKey = "anon_" + Math.floor(Math.random() * 1000);
-const flagName = "test_flag";
-
+const testFlagName = "test_flag";
+const refreshFlagName = "refresh";
 
 
 // Instantiate the SDK
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
   `;
   client.on(client.Event.SDK_READY, function () {
-    let treatment = client.getTreatment(flagName);
+    let treatment = client.getTreatment(testFlagName);
     console.log(treatment);
     if (treatment === "on") {
       setTimeout(function () {
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function checkRefresh(client) {
-  let treatment = client.getTreatment("refresh");
+  let treatment = client.getTreatment(refreshFlagName);
 
   if (treatment === "on") {
     setInterval(function () {
