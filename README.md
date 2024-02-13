@@ -18,7 +18,7 @@ This is a to-do list app that includes the ability to create tasks and delete th
 
 1. Clone the repository.
 2. Run `npm install` to install the dependencies.
-3. Set the authorizationKey in app.js
+3. Set the `authorizationKey` in app.js
 4. create the feature flags called `refresh` and `test_flag` for this demo
 
 ## Usage
