@@ -23,7 +23,7 @@ This is a to-do list app that includes the ability to create tasks and delete th
 
 ## Usage
 
-1. Run `npx parcel index.js` to start the app.
+1. Run `npx parcel index.html` to start the app.
 2. Open your browser and navigate to `http://localhost:1234`.
 
 
