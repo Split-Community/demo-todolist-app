@@ -1,7 +1,7 @@
 import { SplitSuite } from "@splitsoftware/browser-suite";
 
 const authorizationKey = "SDK_KEY";
-const anonKey = "user_" + Math.floor(Math.random() * 1000);
+const userKey = "user_" + Math.floor(Math.random() * 1000);
 const testFlagName = "test_flag";
 const refreshFlagName = "refresh";
 
@@ -13,7 +13,7 @@ var suite = SplitSuite({
     // key represents your internal user id, or the account id that
     // the user belongs to.
     // This could also be a cookie you generate for anonymous users
-    key: anonKey,
+    key: userKey,
     trafficType: "user",
   },
 });
@@ -22,7 +22,7 @@ var suite = SplitSuite({
 var client = suite.client();
 
 
-console.log(anonKey);
+console.log(userKey);
 
 document.addEventListener("DOMContentLoaded", () => {
   // Create and insert the app's HTML structure
