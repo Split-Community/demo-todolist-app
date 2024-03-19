@@ -16,6 +16,9 @@ var suite = SplitSuite({
     key: userKey,
     trafficType: "user",
   },
+  storage: {
+    type: 'LOCALSTORAGE',
+  },
 });
 
 // And get the client instance you'll use
@@ -67,6 +70,7 @@ function checkRefresh(client) {
 
   if (treatment === "on") {
     setInterval(function () {
+      client.destroy();
       location.reload();
     }, 3000);
   }
