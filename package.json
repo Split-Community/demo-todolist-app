@@ -14,6 +14,6 @@
     "process": "^0.11.10"
   },
   "dependencies": {
-    "@splitsoftware/browser-suite": "^1.2.0"
+    "@splitsoftware/browser-suite": "^1.1.2"
   }
 }

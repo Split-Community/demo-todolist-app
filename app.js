@@ -70,7 +70,6 @@ function checkRefresh(client) {
 
   if (treatment === "on") {
     setInterval(function () {
-      client.destroy();
       location.reload();
     }, 3000);
   }
